@@ -7,14 +7,14 @@
       width: 100px;
       height: 100px;
       left: -100px;
-      &.NORTH {
+      &.SOUTH {
         transform: rotateZ(180deg);
       }
       &.EAST {
-        transform: rotateZ(270deg);
+        transform: rotateZ(90deg);
       }
       &.WEST {
-        transform: rotateZ(90deg);
+        transform: rotateZ(270deg);
       }
     }
   }

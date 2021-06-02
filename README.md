@@ -33,5 +33,4 @@ Command Pattern https://en.wikipedia.org/wiki/Command_pattern, ref `app/services
 - Pull Request To Review Main Changes: https://github.com/nusnick/coding-challenge-toy-robot-simulator/pull/1
 
 ### Heroku
-- App: https://dashboard.heroku.com/apps/coding-challenge-toy-robot-sim
 - Url: https://coding-challenge-toy-robot-sim.herokuapp.com/
