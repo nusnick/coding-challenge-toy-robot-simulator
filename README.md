@@ -24,6 +24,11 @@ GUIDES
 
 - `rails s`
 
+### How to run test cases
+
+- Run Comamnd: `rspec spec/services/movement_spec.rb`
+
+
 ### Design Patterns
 
 Command Pattern https://en.wikipedia.org/wiki/Command_pattern, ref `app/services/commands`
