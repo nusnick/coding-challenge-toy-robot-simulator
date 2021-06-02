@@ -1,24 +1,37 @@
-# README
+# CODING CHALLENGE TOY ROBOT SIMULATOR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TECH STACK
+-------------------------
+- Ruby on Rails
+- Slim
+- Bootstrap
+- Jquery
+- Heroku
 
-Things you may want to cover:
 
-* Ruby version
+GUIDES
+-------------------------
 
-* System dependencies
+### How to launch project
 
-* Configuration
+- Install Ruby, follow specific version at `.ruby-version`
 
-* Database creation
+- `bundle`
 
-* Database initialization
+- Install Node, follow specific version at `.nvmrc`
 
-* How to run the test suite
+- `yarn install`
 
-* Services (job queues, cache servers, search engines, etc.)
+- `rails s`
 
-* Deployment instructions
+### Design Patterns
 
-* ...
+Command Pattern https://en.wikipedia.org/wiki/Command_pattern, ref `app/services/commands`
+
+### Git repo
+- Repo: https://github.com/nusnick/coding-challenge-toy-robot-simulator
+- Pull Request To Review Main Changes: https://github.com/nusnick/coding-challenge-toy-robot-simulator/pull/1
+
+### Heroku
+- App: https://dashboard.heroku.com/apps/coding-challenge-toy-robot-sim
+- Url: https://coding-challenge-toy-robot-sim.herokuapp.com/
