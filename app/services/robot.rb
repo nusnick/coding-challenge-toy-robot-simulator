@@ -25,6 +25,10 @@ class Robot
     super.merge(isValid: self.valid?)
   end
 
+  def report
+    "#{x},#{y},#{f}"
+  end
+
   private
 
   def get_command_from command_str
