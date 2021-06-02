@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'MovementService' do           #
 
-  context 'Robot has no position on the table' do
+  context 'Robot at initial state' do
 
     let(:robot_params) {{x: '', y: '', f: ''}}
     before(:each) do
@@ -37,6 +37,26 @@ RSpec.describe 'MovementService' do           #
       ]
       robot = @service.run(commands)
       expect(robot.report).to eq("3,3,NORTH")
+    end
+
+    it 'should has right position' do
+      commands = [
+        "LEFT",
+        "PLACE 0,0,NORTH",
+        "MOVE"
+      ]
+      robot = @service.run(commands)
+      expect(robot.report).to eq("0,1,NORTH")
+    end
+
+    it 'should has right position' do
+      commands = [
+        "PLACE 5,100,NORTH",
+        "PLACE 0,0,NORTH",
+        "MOVE"
+      ]
+      robot = @service.run(commands)
+      expect(robot.report).to eq("0,1,NORTH")
     end
 
   end
