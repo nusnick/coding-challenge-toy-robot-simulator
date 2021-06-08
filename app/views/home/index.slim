@@ -1,0 +1,29 @@
+div.lcd.flex
+  div.map
+    = image_tag 'robot.png', id: 'robot'
+    table
+      - UNITS.times.each do |i|
+        tr
+          - UNITS.times.each do |j|
+            td.cell
+  div.console
+    div console >
+
+hr
+
+div.controls.flex
+  button.btn.place type="button" data-bs-toggle="modal" data-bs-target="#place-modal"
+    | Place
+  button.btn.move type="button"
+    | Move
+  button.btn.left type="button"
+    | < Left
+  button.btn.right type="button"
+    | Right >
+  button.btn.report type="button"
+    | Report
+
+= render 'place_modal'
+
+= javascript_pack_tag 'home'
+

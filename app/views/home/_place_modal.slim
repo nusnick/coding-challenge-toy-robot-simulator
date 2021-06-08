@@ -1,0 +1,20 @@
+#place-modal.modal.fade role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title Place Command Arguments
+        button.btn-close aria-label="Close" data-bs-dismiss="modal" type="button"
+      .modal-body
+        form#place-form
+          .form-group
+            label.col-form-label for="x"  X:
+            input.form-control name='x' type="number" min='0' max="#{UNITS - 1}" required=true
+          .form-group
+            label.col-form-label for="y"  Y:
+            input.form-control name='y' type="number" min='0' max="#{UNITS - 1}" required=true
+          .form-group
+            label.col-form-label for="f"  F:
+            = select_tag :f, options_for_select(Robot::FACES), class: 'form-select', required: true
+      .modal-footer
+        button.btn.btn-secondary.close data-bs-dismiss="modal" type="button"  Close
+        button.btn.btn-primary type="submit" form='place-form'  Submit

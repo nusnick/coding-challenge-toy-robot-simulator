@@ -1,0 +1,57 @@
+.lcd {
+  padding: 20px;
+  .map {
+    position: relative;
+    #robot {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: -100px;
+      &.SOUTH {
+        transform: rotateZ(180deg);
+      }
+      &.EAST {
+        transform: rotateZ(90deg);
+      }
+      &.WEST {
+        transform: rotateZ(270deg);
+      }
+    }
+  }
+
+  table {
+    background-color: antiquewhite;
+  }
+
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+
+  .console {
+    width: 500px;
+    height: 501px;
+    padding: 10px;
+    background-color: black;
+    color: antiquewhite;
+    overflow-y: scroll;
+    font-size: 20px;
+    font-family: Arial;
+  }
+
+}
+
+.controls {
+
+  button {
+    background-color: chocolate;
+    color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
